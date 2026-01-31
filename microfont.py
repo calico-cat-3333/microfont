@@ -68,7 +68,7 @@ class MicroFont:
         if self.index != None:
             index = self.index
         else:
-            self.stream.seek(0)
+            self.stream.seek(12)
             index = self.stream.read(self.index_len)
             if self.cache_index: self.index = index
 
